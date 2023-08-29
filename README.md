@@ -31,7 +31,7 @@ of maintaining data integrity in dynamic structures.
 into processing tree-based structures and is often used as a building block for more complex algorithms.
 
 ## Graph Theory Connection:
-Binary trees are a type of graph, and learning about them can help you grasp fundamental concepts in graph theory.
+- Binary trees are a type of graph, and learning about them can help you grasp fundamental concepts in graph theory.
 This knowledge can be useful in various applications, such as network analysis and social network algorithms.
 
 ## Memory Management:
