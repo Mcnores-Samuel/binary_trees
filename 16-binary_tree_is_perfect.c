@@ -31,7 +31,7 @@ int is_perfect(const binary_tree_t *tree, int depth, int pos)
 		return (0);
 	n = (is_perfect(tree->left, depth, pos + 1) &&
 			is_perfect(tree->right, depth, pos + 1));
-	return(n);
+	return (n);
 }
 
 /**
