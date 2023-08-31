@@ -22,6 +22,7 @@ int find_depth_left(const binary_tree_t *tree)
 int is_perfect(const binary_tree_t *tree, int depth, int pos)
 {
 	int n;
+
 	if (tree == NULL)
 		return (0);
 	if (tree->left == NULL && tree->right == NULL)
