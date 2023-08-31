@@ -39,10 +39,17 @@ binary_tree_t *binary_trees_ancestor(const binary_tree_t *first,
 	if (first == NULL || second == NULL)
 		return (NULL);
 
-	while (first_tmp != NULL)
+	if (first == second)
+		return ((binary_tree_t *)first);
+
+	if (first && second)
 	{
-		root = first_tmp;
-		first_tmp = first_tmp->parent;
+		while (first_tmp != NULL)
+		{
+			root = first_tmp;
+			first_tmp = first_tmp->parent;
+		}
+		return (common_ancestor(root, first->n, second->n));
 	}
-	return (common_ancestor(root, first->n, second->n));
+	return (NULL);
 }
